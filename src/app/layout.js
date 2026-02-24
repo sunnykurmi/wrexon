@@ -5,52 +5,96 @@ import { PageLoader } from "@/components/ui/PageLoader";
 import { CursorGlow } from "@/components/ui/CursorGlow";
 import PageTransition from "@/components/ui/PageTransition";
 import LenisScroll from './../components/LenisScroll';
+import OrganizationSchema from "@/components/seo/OrganizationSchema";
+import { Const } from "@/utils/Constants";
+
 
 export const metadata = {
+  metadataBase: new URL(Const?.ClientLink || ""),
+
   title: {
-    default: "Wrexon Technology",
-    template: "%s | Wrexon",
+    default: Const.Brand,
+    template: "%s | " + Const.Brand,
   },
-  icons: {
-    icon: "./logo.png",
-  },
+
   description:
     "Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products.",
+
   keywords: [
     "Wrexon",
-    "SaaS development",
-    "Enterprise software",
-    "Web applications",
-    "Cloud solutions",
-    "UI UX design",
+    "Wrexon SaaS",
+    "SaaS development company",
+    "Enterprise software development",
+    "Custom software development",
+    "Digital engineering services",
+    "Cloud-native application development",
+    "Scalable web applications",
+    "B2B SaaS solutions",
+    "Startup SaaS development",
+    "Product engineering company",
+    "UI UX design agency",
+    "Web application development",
+    "Cloud solutions provider",
+    "Secure enterprise software",
+    "Full-stack development services"
   ],
-  authors: [{ name: "Wrexon Technologies" }],
-  creator: "Wrexon",
-  metadataBase: new URL("https://wrexon.com"),
+
+  authors: [{ name: Const.Brand }],
+  publisher: Const.Brand,
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
+
+  alternates: {
+    canonical: "/", // auto-resolves via metadataBase
+    languages: {
+      "en-IN": "/",
+    },
+  },
+
   openGraph: {
-    title: "Wrexon — Premium SaaS & Digital Engineering",
+    type: "website",
+    locale: "en_US",
+    siteName: Const.Brand,
+    title: Const.Brand,
     description:
-      "We build scalable SaaS platforms, enterprise software, and high-performance digital products.",
-    url: "https://wrexon.com",
-    siteName: "Wrexon",
+      "Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products.",
+    url: Const.ClientLink,
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/favicon/favicon.ico", // fallback OG image
         width: 1200,
         height: 630,
-        alt: "Wrexon SaaS Platform",
+        alt: Const.Brand,
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Wrexon — Premium SaaS & Digital Engineering",
+    title: Const.Brand,
     description:
-      "Enterprise SaaS, cloud, and digital engineering solutions.",
-    images: ["/images/og-image.png"],
+      "Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products.",
+    images: ["/favicon/favicon.ico"],
   },
+
+  icons: {
+    icon: [
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/favicon.ico", type: "image/svg+xml" },
+    ],
+    apple: "/favicon/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
+  },
+
+  manifest: "/favicon/site.webmanifest",
 };
 
 
@@ -58,6 +102,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-black text-white overflow-x-hidden" suppressHydrationWarning>
+        <OrganizationSchema />
         <LenisScroll>
           <PageLoader />
           <CursorGlow />

@@ -5,17 +5,62 @@ import Process from "@/components/home/Process";
 import About from "@/components/home/About";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import CTA from "@/components/home/CTA";
+import WebPageSchema from "@/components/seo/WebPageSchema";
+import { Const } from "@/utils/Constants";
 
-export default function Home(){
+export const metadata = {
+    title: "Wrexon — Premium SaaS & Digital Engineering",
+    description:
+        "Wrexon is a premium SaaS technology company delivering scalable, secure, and enterprise-grade digital products for modern businesses.",
 
-    return(
+    keywords: [
+        "Wrexon",
+        "SaaS development company",
+        "Enterprise software development",
+        "Digital engineering services",
+        "Cloud-native applications",
+        "Custom software development",
+        "Scalable web applications",
+        "UI UX design agency",
+        "Startup SaaS solutions",
+        "B2B SaaS development"
+    ],
+
+    robots: "index, follow",
+
+    openGraph: {
+        title: "Wrexon — Premium SaaS & Digital Engineering",
+        description:
+            "Premium SaaS & digital engineering company building scalable, secure, enterprise-grade software solutions.",
+        url: "https://sdaf.in/",
+        siteName: "Wrexon",
+        type: "website",
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title: "Wrexon — Premium SaaS & Digital Engineering",
+        description:
+            "Premium SaaS & digital engineering company building enterprise-grade software solutions.",
+    },
+};
+
+export default function Home() {
+
+    return (
         <main className="flex flex-col gap-32 overflow-x-hidden">
-            <Reveal><Hero/></Reveal>
-            <Reveal><About/></Reveal>
-            <Reveal><Service/></Reveal>
-            <Reveal><Process/></Reveal>
-            <Reveal><WhyChooseUs/></Reveal>
-            <Reveal><CTA/></Reveal>
+            <WebPageSchema
+                name="Wrexon — Premium SaaS & Digital Engineering"
+                description="Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products."
+                url={`${Const.ClientLink}/`}
+            />
+
+            <Reveal><Hero /></Reveal>
+            <Reveal><About /></Reveal>
+            <Reveal><Service /></Reveal>
+            <Reveal><Process /></Reveal>
+            <Reveal><WhyChooseUs /></Reveal>
+            <Reveal><CTA /></Reveal>
         </main>
     );
 }

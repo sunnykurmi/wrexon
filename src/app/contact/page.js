@@ -4,12 +4,40 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
 import MagneticButton from "@/components/ui/MagneticeButton";
 import { motion } from "framer-motion";
+import WebPageSchema from "@/components/seo/WebPageSchema";
+import { Const } from "@/utils/Constants";
 
-const metadata = {
-  title: "Contact",
-  description:
-    "Contact Wrexon to build your next SaaS or enterprise-grade digital product.",
-};
+// export const metadata = {
+//   title: "Contact Wrexon — SaaS & Software Experts",
+//   description:
+//     "Get in touch with Wrexon to build scalable SaaS, enterprise software, and cloud-native digital products.",
+
+//   keywords: [
+//     "Contact Wrexon",
+//     "Hire SaaS developers",
+//     "Enterprise software consultation",
+//     "Custom software company contact",
+//     "SaaS development inquiry"
+//   ],
+
+//   robots: "index, follow",
+
+//   openGraph: {
+//     title: "Contact Wrexon",
+//     description:
+//       "Talk to our SaaS and digital engineering experts.",
+//     url: "https://sdaf.in/contact",
+//     siteName: "Wrexon",
+//     type: "website",
+//   },
+
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Contact Wrexon",
+//     description:
+//       "Talk to our SaaS and digital engineering experts.",
+//   },
+// };
 
 const handleSubmit = async (e) => {
   e.preventDefault();
@@ -40,12 +68,17 @@ const handleSubmit = async (e) => {
 export default function ContactPage() {
   return (
     <section className="relative py-32 bg-black overflow-hidden">
-      
+      <WebPageSchema
+        name="Contact Wrexon"
+        description="Get in touch with Wrexon’s SaaS and digital engineering experts."
+        url={`${Const.ClientLink}/contact`}
+      />
+
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.15),transparent_60%)]" />
 
       <div className="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-        
+
         {/* LEFT CONTENT */}
         <Reveal>
           <div>
@@ -78,7 +111,7 @@ export default function ContactPage() {
             <Input placeholder="Your Name" />
             <Input placeholder="Email Address" type="email" />
             <Input placeholder="Company (optional)" />
-            
+
             <textarea
               rows="4"
               placeholder="Tell us about your project"

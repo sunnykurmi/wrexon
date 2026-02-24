@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
 import Link from "next/link";
+import WebPageSchema from "@/components/seo/WebPageSchema";
+import { Const } from "@/utils/Constants";
 
 const steps = [
   {
@@ -68,9 +70,46 @@ const steps = [
   },
 ];
 
+// export const metadata = {
+//     title: "Our Development Process — Wrexon",
+//     description:
+//         "Discover Wrexon’s proven SaaS and software development process focused on scalability, security, and performance.",
+
+//     keywords: [
+//         "SaaS development process",
+//         "Software development lifecycle",
+//         "Agile SaaS development",
+//         "Product engineering process",
+//         "Enterprise software workflow"
+//     ],
+
+//     robots: "index, follow",
+
+//     openGraph: {
+//         title: "Our Development Process — Wrexon",
+//         description:
+//             "A transparent and scalable SaaS development process built for modern businesses.",
+//         url: "https://sdaf.in/process",
+//         siteName: "Wrexon",
+//         type: "website",
+//     },
+
+//     twitter: {
+//         card: "summary_large_image",
+//         title: "Wrexon Development Process",
+//         description:
+//             "Our proven SaaS and enterprise software development workflow.",
+//     },
+// };
+
 export default function ProcessPage() {
   return (
     <section className="relative py-32 bg-black overflow-hidden">
+      <WebPageSchema
+    name="Wrexon Development Process"
+    description="Our proven SaaS and enterprise software development workflow."
+    url={`${Const.ClientLink}/process`}
+/>
 
       {/* Ambient background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.12),transparent_70%)]" />
