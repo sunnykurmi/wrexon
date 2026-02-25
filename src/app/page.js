@@ -32,7 +32,7 @@ export const metadata = {
         title: "Wrexon — Premium SaaS & Digital Engineering",
         description:
             "Premium SaaS & digital engineering company building scalable, secure, enterprise-grade software solutions.",
-        url: "https://sdaf.in/",
+        url: "https://www.wrexon.com",
         siteName: "Wrexon",
         type: "website",
     },

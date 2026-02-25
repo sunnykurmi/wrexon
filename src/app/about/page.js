@@ -26,7 +26,7 @@ import { Const } from "@/utils/Constants";
 //     title: "About Wrexon — SaaS & Digital Engineering Experts",
 //     description:
 //       "Meet the team behind Wrexon — building scalable SaaS and enterprise-grade digital products.",
-//     url: "https://sdaf.in/about",
+//     url: "https://www.wrexon.comabout",
 //     siteName: "Wrexon",
 //     type: "website",
 //   },

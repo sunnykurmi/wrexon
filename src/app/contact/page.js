@@ -26,7 +26,7 @@ import { Const } from "@/utils/Constants";
 //     title: "Contact Wrexon",
 //     description:
 //       "Talk to our SaaS and digital engineering experts.",
-//     url: "https://sdaf.in/contact",
+//     url: "https://www.wrexon.comcontact",
 //     siteName: "Wrexon",
 //     type: "website",
 //   },

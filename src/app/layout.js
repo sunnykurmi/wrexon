@@ -69,7 +69,7 @@ export const metadata = {
     url: Const.ClientLink,
     images: [
       {
-        url: "/favicon/favicon.ico", // fallback OG image
+        url: "/favicon/android-chrome-512x512.png", // fallback OG image
         width: 1200,
         height: 630,
         alt: Const.Brand,
@@ -82,13 +82,13 @@ export const metadata = {
     title: Const.Brand,
     description:
       "Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products.",
-    images: ["/favicon/favicon.ico"],
+    images: ["/favicon/android-chrome-512x512.png"],
   },
 
   icons: {
     icon: [
-      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/favicon/favicon.ico", type: "image/svg+xml" },
+      { url: "/favicon/android-chrome-192x192.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/android-chrome-512x512.png", sizes: "512x512", type: "image/svg+xml" },
     ],
     apple: "/favicon/apple-touch-icon.png",
     shortcut: "/favicon.ico",

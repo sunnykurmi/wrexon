@@ -89,7 +89,7 @@ const steps = [
 //         title: "Our Development Process — Wrexon",
 //         description:
 //             "A transparent and scalable SaaS development process built for modern businesses.",
-//         url: "https://sdaf.in/process",
+//         url: "https://www.wrexon.comprocess",
 //         siteName: "Wrexon",
 //         type: "website",
 //     },
@@ -106,10 +106,10 @@ export default function ProcessPage() {
   return (
     <section className="relative py-32 bg-black overflow-hidden">
       <WebPageSchema
-    name="Wrexon Development Process"
-    description="Our proven SaaS and enterprise software development workflow."
-    url={`${Const.ClientLink}/process`}
-/>
+        name="Wrexon Development Process"
+        description="Our proven SaaS and enterprise software development workflow."
+        url={`${Const.ClientLink}/process`}
+      />
 
       {/* Ambient background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.12),transparent_70%)]" />
@@ -141,9 +141,8 @@ export default function ProcessPage() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   viewport={{ once: true }}
-                  className={`relative flex flex-col md:flex-row ${
-                    isLeft ? "md:justify-start" : "md:justify-end"
-                  }`}
+                  className={`relative flex flex-col md:flex-row ${isLeft ? "md:justify-start" : "md:justify-end"
+                    }`}
                 >
                   {/* Card */}
                   <motion.div

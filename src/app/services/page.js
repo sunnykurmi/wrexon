@@ -91,7 +91,7 @@ const services = [
 //     title: "SaaS & Software Development Services — Wrexon",
 //     description:
 //       "Premium SaaS, cloud, and digital engineering services tailored for modern businesses.",
-//     url: "https://sdaf.in/services",
+//     url: "https://www.wrexon.comservices",
 //     siteName: "Wrexon",
 //     type: "website",
 //   },
