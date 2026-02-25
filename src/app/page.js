@@ -9,40 +9,49 @@ import WebPageSchema from "@/components/seo/WebPageSchema";
 import { Const } from "@/utils/Constants";
 
 export const metadata = {
+  title: "Wrexon — Premium SaaS & Digital Engineering",
+  description:
+    "Wrexon is a premium SaaS technology company delivering scalable, secure, and enterprise-grade digital products for modern businesses.",
+
+  keywords: [
+    "Wrexon",
+    "SaaS development company",
+    "Enterprise software development",
+    "Digital engineering services",
+    "Cloud-native applications",
+    "Custom software development",
+    "Scalable web applications",
+    "UI UX design agency",
+    "Startup SaaS solutions",
+    "B2B SaaS development",
+  ],
+
+  robots: "index, follow",
+
+  openGraph: {
     title: "Wrexon — Premium SaaS & Digital Engineering",
     description:
-        "Wrexon is a premium SaaS technology company delivering scalable, secure, and enterprise-grade digital products for modern businesses.",
-
-    keywords: [
-        "Wrexon",
-        "SaaS development company",
-        "Enterprise software development",
-        "Digital engineering services",
-        "Cloud-native applications",
-        "Custom software development",
-        "Scalable web applications",
-        "UI UX design agency",
-        "Startup SaaS solutions",
-        "B2B SaaS development"
+      "Premium SaaS & digital engineering company building scalable, secure, enterprise-grade software solutions.",
+    url: "https://www.wrexon.com",
+    siteName: "Wrexon",
+    type: "website",
+    images: [
+      {
+        url: "https://www.wrexon.com/images/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Wrexon — Premium SaaS & Digital Engineering",
+      },
     ],
+  },
 
-    robots: "index, follow",
-
-    openGraph: {
-        title: "Wrexon — Premium SaaS & Digital Engineering",
-        description:
-            "Premium SaaS & digital engineering company building scalable, secure, enterprise-grade software solutions.",
-        url: "https://www.wrexon.com",
-        siteName: "Wrexon",
-        type: "website",
-    },
-
-    twitter: {
-        card: "summary_large_image",
-        title: "Wrexon — Premium SaaS & Digital Engineering",
-        description:
-            "Premium SaaS & digital engineering company building enterprise-grade software solutions.",
-    },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrexon — Premium SaaS & Digital Engineering",
+    description:
+      "Premium SaaS & digital engineering company building enterprise-grade software solutions.",
+    images: ["https://www.wrexon.com/images/og.png"],
+  },
 };
 
 export default function Home() {
