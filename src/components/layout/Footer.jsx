@@ -91,6 +91,7 @@ function FooterLink({ href, children }) {
     <li>
       <Link
         href={href}
+        title={children}
         className="text-white/60 hover:text-purple-400 transition"
       >
         {children}

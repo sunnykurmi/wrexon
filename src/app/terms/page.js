@@ -8,6 +8,9 @@ export const metadata = {
         "Review Wrexon’s terms and conditions governing the use of our SaaS and digital services.",
 
     robots: "index, follow",
+    other: {
+        "image_src": "https://www.wrexon.com/images/og.png",
+    }
 };
 
 export default function Page() {
@@ -18,7 +21,7 @@ export default function Page() {
                 description="Wrexon’s terms and conditions for using our services."
                 url={`${Const.ClientLink}/terms`}
             />
-        <TermsSectionPage/>    
+            <TermsSectionPage />
         </main>
     );
 }

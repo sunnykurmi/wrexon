@@ -3,7 +3,7 @@ import WebPageSchema from "@/components/seo/WebPageSchema";
 import { Const } from "@/utils/Constants";
 
 export const metadata = {
-  title: "Contact Wrexon — SaaS & Software Experts",
+  title: "Contact WREXON | SaaS & Software Experts",
   description:
     "Get in touch with Wrexon to build scalable SaaS, enterprise software, and cloud-native digital products.",
 
@@ -32,6 +32,9 @@ export const metadata = {
     description:
       "Talk to our SaaS and digital engineering experts.",
   },
+  other: {
+    "image_src": "https://www.wrexon.com/images/og.png",
+  }
 };
 
 export default function ContactPage() {
@@ -42,7 +45,7 @@ export default function ContactPage() {
         description="Get in touch with Wrexon’s SaaS and digital engineering experts."
         url={`${Const.ClientLink}/contact`}
       />
-      <ContactSectionPage/>
+      <ContactSectionPage />
     </section>
   );
 }

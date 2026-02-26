@@ -8,72 +8,72 @@ import Link from "next/link";
 
 function ServiceSectionPage() {
 
-    const services = [
-  {
-    title: "SaaS Product Development",
-    icon: "🚀",
-    desc: "We help startups and businesses build scalable SaaS products — from idea validation to production-ready platforms.",
-    points: [
-      "MVP & full-scale SaaS development",
-      "Authentication systems, dashboards & APIs",
-      "Secure, scalable system architecture",
-    ],
-  },
-  {
-    title: "Web & Mobile Applications",
-    icon: "💻",
-    desc: "Custom web and mobile applications built for performance, usability, and long-term business growth.",
-    points: [
-      "Business & customer-facing applications",
-      "Admin panels & data dashboards",
-      "Modern, responsive user interfaces",
-    ],
-  },
-  {
-    title: "Cloud & DevOps Solutions",
-    icon: "☁️",
-    desc: "We deploy, optimize, and manage cloud infrastructure to ensure reliability, security, and scalability.",
-    points: [
-      "Production-ready cloud deployment",
-      "CI/CD pipeline setup",
-      "Performance monitoring and optimization",
-    ],
-  },
-  {
-    title: "UI/UX & Brand Engineering",
-    icon: "🎨",
-    desc: "Clean, modern design systems that enhance user experience and strengthen brand identity.",
-    points: [
-      "UI/UX design systems",
-      "Mobile-first and responsive layouts",
-      "Consistent, premium brand design",
-    ],
-  },
-  {
-    title: "Startup MVP Consulting",
-    icon: "🧠",
-    desc: "Guidance for early-stage teams to make the right product and technical decisions from day one.",
-    points: [
-      "Feature prioritization and roadmap planning",
-      "Tech stack selection",
-      "Cost-efficient development strategy",
-    ],
-  },
-  {
-    title: "Maintenance & Growth Support",
-    icon: "🔧",
-    desc: "Ongoing support to keep your product stable, secure, and continuously improving..",
-    points: [
-      "Bug fixes and regular updates",
-      "New feature development",
-      "Long-term technical support",
-    ],
-  },
-];
+  const services = [
+    {
+      title: "SaaS Product Development",
+      icon: "🚀",
+      desc: "We help startups and businesses build scalable SaaS products — from idea validation to production-ready platforms.",
+      points: [
+        "MVP & full-scale SaaS development",
+        "Authentication systems, dashboards & APIs",
+        "Secure, scalable system architecture",
+      ],
+    },
+    {
+      title: "Web & Mobile Applications",
+      icon: "💻",
+      desc: "Custom web and mobile applications built for performance, usability, and long-term business growth.",
+      points: [
+        "Business & customer-facing applications",
+        "Admin panels & data dashboards",
+        "Modern, responsive user interfaces",
+      ],
+    },
+    {
+      title: "Cloud & DevOps Solutions",
+      icon: "☁️",
+      desc: "We deploy, optimize, and manage cloud infrastructure to ensure reliability, security, and scalability.",
+      points: [
+        "Production-ready cloud deployment",
+        "CI/CD pipeline setup",
+        "Performance monitoring and optimization",
+      ],
+    },
+    {
+      title: "UI/UX & Brand Engineering",
+      icon: "🎨",
+      desc: "Clean, modern design systems that enhance user experience and strengthen brand identity.",
+      points: [
+        "UI/UX design systems",
+        "Mobile-first and responsive layouts",
+        "Consistent, premium brand design",
+      ],
+    },
+    {
+      title: "Startup MVP Consulting",
+      icon: "🧠",
+      desc: "Guidance for early-stage teams to make the right product and technical decisions from day one.",
+      points: [
+        "Feature prioritization and roadmap planning",
+        "Tech stack selection",
+        "Cost-efficient development strategy",
+      ],
+    },
+    {
+      title: "Maintenance & Growth Support",
+      icon: "🔧",
+      desc: "Ongoing support to keep your product stable, secure, and continuously improving..",
+      points: [
+        "Bug fixes and regular updates",
+        "New feature development",
+        "Long-term technical support",
+      ],
+    },
+  ];
 
   return (
     <div>
-        {/* Ambient Glow */}
+      {/* Ambient Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.15),transparent_70%)]" />
 
       <div className="relative max-w-7xl mx-auto px-6">
@@ -106,6 +106,7 @@ function ServiceSectionPage() {
             </p>
 
             <Link
+              title="Contact Wrexon"
               href="/contact"
               className="inline-block mt-8 px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-700 transition font-semibold text-white"
             >

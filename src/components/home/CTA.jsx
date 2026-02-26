@@ -42,6 +42,7 @@ export default function CTA() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
+              title="Book a Demo"
               href="/contact"
               className="px-8 py-4 rounded-xl border border-white/20 text-white/80 hover:text-white hover:border-white transition"
             >

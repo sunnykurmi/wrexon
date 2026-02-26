@@ -69,7 +69,7 @@ export const metadata = {
     url: Const.ClientLink,
     images: [
       {
-        url: "/favicon/android-chrome-512x512.png", // fallback OG image
+        url: "https://www.wrexon.com/images/og.png", // fallback OG image
         width: 1200,
         height: 630,
         alt: Const.Brand,
@@ -82,16 +82,19 @@ export const metadata = {
     title: Const.Brand,
     description:
       "Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products.",
-    images: ["/favicon/android-chrome-512x512.png"],
+    images: ["https://www.wrexon.com/images/og.png"],
   },
 
   icons: {
     icon: [
       { url: "/favicon/android-chrome-192x192.png", sizes: "96x96", type: "image/png" },
-      { url: "/favicon/android-chrome-512x512.png", sizes: "512x512", type: "image/svg+xml" },
+      { url: "/favicon/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
     ],
     apple: "/favicon/apple-touch-icon.png",
     shortcut: "/favicon.ico",
+  },
+  other: {
+    "image_src": "https://www.wrexon.com/images/og.png",
   },
 
   manifest: "/favicon/site.webmanifest",
@@ -106,11 +109,17 @@ export default function RootLayout({ children }) {
         <LenisScroll>
           <PageLoader />
           <CursorGlow />
-          <Navbar />
+          <header>
+            <Navbar />
+          </header>
           <PageTransition>
-            {children}
+            <main>
+              {children}
+            </main>
           </PageTransition>
-          <Footer />
+          <footer>
+            <Footer />
+          </footer>
         </LenisScroll>
       </body>
     </html>

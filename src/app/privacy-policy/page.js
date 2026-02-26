@@ -8,6 +8,9 @@ export const metadata = {
         "Read Wrexon’s privacy policy to understand how we collect, use, and protect your data.",
 
     robots: "index, follow",
+    other: {
+        "image_src": "https://www.wrexon.com/images/og.png",
+    }
 };
 
 export default function Page() {
@@ -18,7 +21,7 @@ export default function Page() {
                 description="Wrexon’s privacy policy and data protection practices."
                 url={`${Const.ClientLink}/privacy-policy`}
             />
-        <PrivacyPolicySectionPage/>
+            <PrivacyPolicySectionPage />
         </main>
     );
 }

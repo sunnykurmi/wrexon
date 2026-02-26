@@ -3,35 +3,38 @@ import WebPageSchema from "@/components/seo/WebPageSchema";
 import { Const } from "@/utils/Constants";
 
 export const metadata = {
+  title: "Our Development Process — Wrexon",
+  description:
+    "Discover Wrexon’s proven SaaS and software development process focused on scalability, security, and performance.",
+
+  keywords: [
+    "SaaS development process",
+    "Software development lifecycle",
+    "Agile SaaS development",
+    "Product engineering process",
+    "Enterprise software workflow"
+  ],
+
+  robots: "index, follow",
+
+  openGraph: {
     title: "Our Development Process — Wrexon",
     description:
-        "Discover Wrexon’s proven SaaS and software development process focused on scalability, security, and performance.",
+      "A transparent and scalable SaaS development process built for modern businesses.",
+    url: "https://www.wrexon.comprocess",
+    siteName: "Wrexon",
+    type: "website",
+  },
 
-    keywords: [
-        "SaaS development process",
-        "Software development lifecycle",
-        "Agile SaaS development",
-        "Product engineering process",
-        "Enterprise software workflow"
-    ],
-
-    robots: "index, follow",
-
-    openGraph: {
-        title: "Our Development Process — Wrexon",
-        description:
-            "A transparent and scalable SaaS development process built for modern businesses.",
-        url: "https://www.wrexon.comprocess",
-        siteName: "Wrexon",
-        type: "website",
-    },
-
-    twitter: {
-        card: "summary_large_image",
-        title: "Wrexon Development Process",
-        description:
-            "Our proven SaaS and enterprise software development workflow.",
-    },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrexon Development Process",
+    description:
+      "Our proven SaaS and enterprise software development workflow.",
+  },
+  other: {
+    "image_src": "https://www.wrexon.com/images/og.png",
+  }
 };
 
 export default function ProcessPage() {
@@ -42,7 +45,7 @@ export default function ProcessPage() {
         description="Our proven SaaS and enterprise software development workflow."
         url={`${Const.ClientLink}/process`}
       />
-      <ProcessSectionPage/>
+      <ProcessSectionPage />
     </section>
   );
 }

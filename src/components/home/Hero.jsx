@@ -56,9 +56,10 @@ export default function Hero() {
           <Image
             src="/images/logo.png"
             alt="Wrexon Logo"
-            width={700}
-            height={700}
+            width={100}
+            height={100}
             priority
+            title="logo"
             className="w-40 md:w-72 lg:w-96 h-auto"
           />
         </motion.div>

@@ -34,6 +34,9 @@ export const metadata = {
     description:
       "SaaS, cloud, and enterprise software development services.",
   },
+  other: {
+    "image_src": "https://www.wrexon.com/images/og.png",
+  }
 };
 
 export default function ServicesPage() {
@@ -44,7 +47,7 @@ export default function ServicesPage() {
         description="SaaS, cloud engineering, and enterprise software development services."
         url={`${Const.ClientLink}/services`}
       />
-      <ServiceSectionPage/>
+      <ServiceSectionPage />
     </section>
   );
 }

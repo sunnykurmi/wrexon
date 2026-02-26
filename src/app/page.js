@@ -9,7 +9,7 @@ import WebPageSchema from "@/components/seo/WebPageSchema";
 import { Const } from "@/utils/Constants";
 
 export const metadata = {
-  title: "Wrexon — Premium SaaS & Digital Engineering",
+  title: "WREXON | Premium SaaS & Digital Engineering",
   description:
     "Wrexon is a premium SaaS technology company delivering scalable, secure, and enterprise-grade digital products for modern businesses.",
 
@@ -29,7 +29,7 @@ export const metadata = {
   robots: "index, follow",
 
   openGraph: {
-    title: "Wrexon — Premium SaaS & Digital Engineering",
+    title: "WREXON | Premium SaaS & Digital Engineering",
     description:
       "Premium SaaS & digital engineering company building scalable, secure, enterprise-grade software solutions.",
     url: "https://www.wrexon.com",
@@ -40,36 +40,39 @@ export const metadata = {
         url: "https://www.wrexon.com/images/og.png",
         width: 1200,
         height: 630,
-        alt: "Wrexon — Premium SaaS & Digital Engineering",
+        alt: "WREXON | Premium SaaS & Digital Engineering",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Wrexon — Premium SaaS & Digital Engineering",
+    title: "WREXON | Premium SaaS & Digital Engineering",
     description:
       "Premium SaaS & digital engineering company building enterprise-grade software solutions.",
     images: ["https://www.wrexon.com/images/og.png"],
   },
+  other: {
+    "image_src": "https://www.wrexon.com/images/og.png",
+  }
 };
 
 export default function Home() {
 
-    return (
-        <main className="flex flex-col gap-32 overflow-x-hidden">
-            <WebPageSchema
-                name="Wrexon — Premium SaaS & Digital Engineering"
-                description="Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products."
-                url={`${Const.ClientLink}/`}
-            />
+  return (
+    <main className="flex flex-col gap-32 overflow-x-hidden">
+      <WebPageSchema
+        name="WREXON | Premium SaaS & Digital Engineering"
+        description="Wrexon is a premium SaaS technology company building scalable, secure, and enterprise-grade digital products."
+        url={`${Const.ClientLink}/`}
+      />
 
-            <Reveal><Hero /></Reveal>
-            <Reveal><About /></Reveal>
-            <Reveal><Service /></Reveal>
-            <Reveal><Process /></Reveal>
-            <Reveal><WhyChooseUs /></Reveal>
-            <Reveal><CTA /></Reveal>
-        </main>
-    );
+      <Reveal><Hero /></Reveal>
+      <Reveal><About /></Reveal>
+      <Reveal><Service /></Reveal>
+      <Reveal><Process /></Reveal>
+      <Reveal><WhyChooseUs /></Reveal>
+      <Reveal><CTA /></Reveal>
+    </main>
+  );
 }

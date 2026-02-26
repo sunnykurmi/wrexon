@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-purple-400">
+        <Link title="Home" href="/" className="text-2xl font-bold text-purple-400">
           <motion.div
            whileHover={{ rotate: 15, scale: 1.1 }}
            transition={{ type: "spring", stiffness: 200 }}
@@ -34,6 +34,7 @@ export default function Navbar() {
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
+              title={item.label}
                 href={item.href}
                 className={`relative px-2 py-1 ${
                   pathname === item.href
@@ -66,7 +67,7 @@ export default function Navbar() {
         >
           {navItems.map((item) => (
             <li key={item.href}>
-              <Link href={item.href} onClick={() => setMenuOpen(false)}>
+              <Link  title={item.label} href={item.href} onClick={() => setMenuOpen(false)}>
                 {item.label}
               </Link>
             </li>
